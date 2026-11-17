@@ -1,0 +1,47 @@
+ESTAMPA LAB AI · DESPLIEGUE ONLINE
+
+Este paquete está preparado para Render. No hace falta modificar código.
+
+PASO 1 · SUBIR A GITHUB
+1. Entrá en https://github.com y creá una cuenta si no tenés.
+2. Tocá New repository.
+3. Nombre: estampa-lab-ai
+4. Elegí Private (recomendado) y Create repository.
+5. Tocá Add file > Upload files.
+6. Arrastrá TODOS los archivos de esta carpeta (no la carpeta contenedora):
+   - estampa-lab-ai.html
+   - server.mjs
+   - package.json
+   - render.yaml
+7. Tocá Commit changes.
+
+PASO 2 · PUBLICAR EN RENDER
+1. Entrá en https://render.com y creá una cuenta.
+2. Elegí New > Blueprint.
+3. Conectá GitHub y autorizá el acceso al repositorio estampa-lab-ai.
+4. Seleccioná el repositorio y seguí con Apply.
+5. Render leerá render.yaml y creará el servicio.
+6. Si pide los valores secretos, completalos:
+   OPENAI_API_KEY = tu clave secreta de OpenAI
+   APP_PASSWORD = inventá una contraseña larga para proteger tu aplicación.
+   No compartas estos valores.
+7. Confirmá el despliegue.
+
+PASO 3 · ABRIR TU APP
+1. En Render, abrí el servicio estampa-lab-ai.
+2. Esperá a que el estado diga Live.
+3. Copiá la dirección que termina en .onrender.com.
+4. Abrila. El navegador pedirá usuario y contraseña:
+   Usuario: estampa
+   Contraseña: la que elegiste como APP_PASSWORD.
+5. La aplicación mostrará si el motor está conectado.
+
+IMPORTANTE
+- La clave OPENAI_API_KEY se guarda como variable secreta en Render, nunca en el HTML.
+- APP_PASSWORD protege el enlace para que otras personas no puedan gastar tu saldo de API.
+- El uso de la API se factura aparte de ChatGPT y puede generar cargos.
+- El plan gratuito de Render puede apagar el servicio cuando no se usa; la primera apertura puede tardar.
+- Si OpenAI solicita verificación de organización o el modelo no está habilitado, completá ese requisito en la plataforma de OpenAI.
+- No pegues tus claves en el repositorio de GitHub ni en este chat.
+
+Si te trabás, mandame una captura de la pantalla (ocultá claves, contraseñas y datos privados) y te digo exactamente dónde tocar.
